@@ -1,5 +1,4 @@
-CREATE USER 'monitor'@'%' IDENTIFIED BY 'monitor';
-GRANT ALL PRIVILEGES on *.* TO 'monitor'@'%';
-CREATE USER 'iptv'@'%' IDENTIFIED BY 'iptv00';
-GRANT ALL PRIVILEGES on *.* TO 'iptv'@'%';
+CREATE USER 'monitor'@'%' WITH MAX_QUERIES_PER_HOUR 1 MAX_UPDATES_PER_HOUR 0  MAX_STATEMENT_TIME 0.0000000001;
+CREATE USER 'dreamsoftware'@'%' IDENTIFIED BY 'dreamsoftware00';
+GRANT ALL PRIVILEGES on *.* TO 'dreamsoftware'@'%';
 FLUSH PRIVILEGES;
