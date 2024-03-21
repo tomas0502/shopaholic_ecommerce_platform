@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
-import { ISaveUser } from 'src/app/@shared/interfaces/user.interface';
+import { IUpdateUser } from 'src/app/@shared/interfaces/user.interface';
 import { UserService } from 'src/app/@shared/services/user.service';
 
 @Component({
@@ -52,8 +52,7 @@ export class UserUpdateComponent implements OnInit {
     if (!this.userForm.valid) {
       this.notificationService.error('Data Invalid', '');
     } else {
-      const userData: ISaveUser = {
-        id: this.data.id,
+      const userData: IUpdateUser = {
         name: this.userForm.value.name || '',
         lastname: this.userForm.value.lastname || '',
         email: this.userForm.value.email || '',
@@ -67,7 +66,7 @@ export class UserUpdateComponent implements OnInit {
       };
 
       this.userService
-      .updateUser(userData)
+      .updateUser(this.data.id, userData)
       .subscribe((data: any) => {
           this.notificationService.success('User Updated successfully', '');
           this.isModalOpen = false;
