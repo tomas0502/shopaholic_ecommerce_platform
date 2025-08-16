@@ -287,13 +287,3 @@ The comprehensive and well-structured content of the course has empowered me to 
 Once again, I extend my heartfelt appreciation to Jonathan Goyes for his dedication to sharing knowledge and expertise, which has significantly contributed to my growth as a developer.
 
 Thank you, Jonathan Goyes!
-
-
-## Visitors Count
-
-<img width="auto" src="https://profile-counter.glitch.me/shopaholic_ecommerce_platform/count.svg" />
- 
- ## Please Share & Star the repository to keep me motivated.
-  <a href = "https://github.com/sergio11/shopaholic_ecommerce_platform/stargazers">
-     <img src = "https://img.shields.io/github/stars/sergio11/shopaholic_ecommerce_platform" />
-  </a>
